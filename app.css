@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+}
+
+.content {
+    width: 100%;
+    max-width: 1400px;
+    background-color: rgb(255, 255, 255);
+    height: 641px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    padding: 50px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .200);
+    width: max-content;
+    height: max-content;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: "Press Start 2P";
+    margin-top: 50px;
+}
+
+.col-btn button {
+    width: max-content;
+    height: max-content;
+    background-color: black;
+    color: white;
+    padding: 8px 34px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.h4 {
+    font-family: "Press Start 2P";
+    display: block;
+}
+
+.content-timer {
+    display: flex;
+    gap: 8px;
+}
+
+.col-btn {
+    width: 300px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 55px;
+}
+
+.input-wrapper input {
+    width: 100px;
+    padding: 6px 15px;
+    width: 84px;
+    font-size: 1rem;
+}
+
+.input-wrapper #save {
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    padding: 6px 34px;
+    cursor: pointer;
+}
+
+/* remove arrow up down in input type number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+h5{
+    font-family: "Press Start 2P";
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: .8rem;
+ 
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    line-height: -30px;
+}
+
+@media (max-width:600px) {
+    .content {
+        width: 100%;
+        max-width: 1400px;
+        background-color:  rgb(255, 255, 255);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .text1,
+    .text2,
+    .text3,
+    .text4 {
+        padding: 30px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, .200);
+        width: max-content;
+        height: max-content;
+        border-radius: 5px;
+        font-size: .7rem;
+        font-family: "Press Start 2P";
+        margin-top: 50px;
+    }
+    .col-btn button {
+        width: max-content;
+        height: max-content;
+        background-color: black;
+        color: white;
+        padding: 8px 24px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .input-wrapper {
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 55px;
+display: inline;
+    }
+    .input-wrapper input {
+        width: 30px;
+        padding: 6px 7px;
+        width: 84px;
+        font-size: .8rem;
+        display: inline-block;
+        margin: auto;
+    }
+    
+    .input-wrapper #save {
+        font-size: .9rem;
+        background-color: black;
+        color: white;
+        padding: 6px 34px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+        display:block !important;
+    }
+    .h4 {
+        font-family: "Press Start 2P";
+        display: block;
+        width: max-content;
+        font-size: 1.5rem;
+        margin-top: -20px;
+    }
+    h5{
+        font-family: "Press Start 2P";
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        padding-left: 20px;
+        font-size: .6rem;
+     
+    }
+}
